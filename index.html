@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>студия растяжки</title>
 </head>
+
 <body>
-<header>
-    <h1>студия растяжки</h1>
-    <img src="images/log.jpg" alt="">
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Направления и расписания</a></li>
-            <li><a href="#">Список тренеров</a></li>
-            <li><a href="#">Польза занятий</a></li>
-        </ul>
-    </nav>
-    <a href="#">Войти/Регистрация</a>
-</header>
-<main>
-    <div>
-        <h2>Список тренеров</h2>
-        <div>
-            <img src="images/trener.jpg" alt="" width="250">
-            <p>Иванова Наташа</p>
-            <p>Артистка Балета первой категории. Педагог-хореограф, руководитель хореографического коллектива с углубленной подготовкой. Солистка театра - танца. Фитнес-инструктор групповых программ и тренажерного зала. Опыт более 6 лет.</p>
+    <header class="header">
+        <h1 class="header__title">студия растяжки</h1>
+        <img class="header__logo" src="images/log.jpg" alt="">
+        <nav class="header__menu">
+            <ul>
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Направления и расписания</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Список тренеров</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Польза занятий</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="header__button" href="#">Войти/Регистрация</a>
+    </header>
+    <main class="main">
+        <div class="trainers">
+            <h2 class="trainers__title">Список тренеров</h2>
+            <div class="trainers_card">
+                <img class="trainers__image" src="images/trener.jpg" alt="" width="250">
+                <p class="trainers__name">Иванова Наташа</p>
+                <p class="trainers__desp">Артистка Балета первой категории. Педагог-хореограф, руководитель хореографического коллектива с
+                    углубленной подготовкой. Солистка театра - танца. Фитнес-инструктор групповых программ и
+                    тренажерного зала. Опыт более 6 лет.</p>
+            </div>
+            <div class="trainers_card">
+                <img class="trainers__image" src="images/t2.jpg" alt="" width="250">
+                <p class="trainers__name">Смирнова Светлана</p>
+                <p class="trainers__desp">КМС по спортивной гимнастике. Артистка цирка. Диплом Казахского Республиканского Эстрадно-циркового
+                    колледжа в фитнесе с 2009 года. Более 10 летний опыт проведения различных групповых программ
+                    (силовые, mind body, тренажёрный зал, персональные тренировки).</p>
+            </div>
+            <div class="trainers_card">
+                <img class="trainers__image" src="images/t3.jpg" alt="" width="250">
+                <p class="trainers__name">Сидорова Елена</p>
+                <p class="trainers__desp">Сертифицировнанный тренер групповых и индивидуальных программ (VP FITNESS), преподаватель по
+                    растяжке, гимнастике, бодибалету. Постановщик и хореограф. </p>
+            </div>
         </div>
-        <div>
-            <img src="images/t2.jpg" alt="" width="250">
-            <p>Смирнова Светлана</p>
-            <p>КМС по спортивной гимнастике. Артистка цирка. Диплом Казахского Республиканского Эстрадно-циркового колледжа в фитнесе с 2009 года. Более 10 летний опыт проведения различных групповых программ (силовые, mind body, тренажёрный зал, персональные тренировки).</p>
-        </div>
-        <div>
-            <img src="images/t3.jpg" alt="" width="250">
-            <p>Сидорова Елена</p>
-            <p>Сертифицировнанный тренер групповых и индивидуальных программ (VP FITNESS), преподаватель по растяжке, гимнастике, бодибалету. Постановщик и хореограф. </p>
-        </div>
-    </div>
-</main>
-<footer>
-    <p>Котолуп Татьяна, Киреева Ольга ФО-41</p>
-</footer>
+    </main>
+    <footer class="footer">
+        <p>Котолуп Татьяна, Киреева Ольга ФО-41</p>
+    </footer>
 </body>
+
 </html>
