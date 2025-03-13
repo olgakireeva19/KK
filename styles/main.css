@@ -1,0 +1,32 @@
+.training{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.training__button{
+    margin-top: 15px;
+    margin-bottom:15px;
+    color: rgb(0, 0, 0);
+    background-color: cadetblue;
+}
+.trainers__wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.trainers__card{
+    padding-top: 30px;
+    width: 450px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #ca2d2d;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.trainers__image{
+    margin: 0 auto;
+}
