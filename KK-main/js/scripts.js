@@ -31,3 +31,28 @@ trainersImg.forEach((item, index) => {
     });
 
 });
+const trenersContainer = document.querySelector(".trainers");
+if (trenersContainer) {
+    const dataTitleTrainers= [
+            "Ирина Лайм",
+            "Марина Орлова",
+            "Лиза Весенняя",
+        ];
+        const titleTreners =trenersContainer.querySelectorAll(".trainers__name");
+      titleTreners.forEach((item, index) => {
+      item.textContent = dataTitleTrainers[index];
+           });
+}
+
+const welcоmeButtonModal = document.querySelector(".header__button");
+if (welcоmeButtonModal && modalApplication) {
+    welcоmeButtonModal.addEventListener("click", () => {
+      modalApplication.removeAttribute("hidden");
+    });
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target === modalApplication) {
+        modalApplication.setAttribute("hidden", true);
+    }
+});
