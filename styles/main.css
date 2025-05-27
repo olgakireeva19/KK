@@ -76,13 +76,22 @@ box-shadow: 0 8px 16px 0;
     border-radius: 20px;
     padding: 10px 20px;
 }
+.trainers__description {
+    margin-top: 15px; 
+    color: #4a4a4a; 
+    text-align: center;
+    font-size: 16px; 
+    position: absolute; 
+    width: 250px; 
+    background-color: #f79d9d; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 50%);
+}
 .applications {
     position: fixed; /* позицинорование фиксированное */
     top: 0; /* Элемент будет находиться на верхней границе экрана*/
     left: 0; /* Элемент будет находиться на левой границе экрана.*/
-    width: 100%;/* Ширина 100% от окна браузера */
-    height: 100%;/* Высота 100% от окна браузера */
-    background-color: rgba(58, 60, 65, 0.7); /*задаем фон Полупрозрачный с цветом */
 }
 .application {
     position: absolute; /* позиционируется абсолютно*/
@@ -111,5 +120,69 @@ box-shadow: 0 8px 16px 0;
     display: flex; /*Используем flexbox для выравнивания формы в строку*/
     flex-direction: column;
     row-gap: 10px; /* отступы между строками */
+} 
+
+.applications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    padding: 16px;
+    width: 600px;
+    border-radius: 14px;
+ }
+.form__close{
+    position: absolute;
+    top: 10px;
+    right: 11px;
+}
+.popup{
+    position: relative;
 }
 
+.price_list{
+    margin-top: 60px;
+    display: flex;
+    column-gap: 40px;
+}
+.price_item{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ca2d2d;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    transition: transform 0.3s ease-out;
+}
+.price_level{
+    font-weight: 600;
+    font-size: 30px;
+}
+.price_price{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.price_button{
+    margin-top: 15px;
+    margin-bottom:15px;
+    color: white;
+    background-color: red;
+    width: 250px;
+    height: 60px;
+    border-radius: 60px; 
+}
+
+.price_button:hover{
+    background-color: orange;
+    
+}
+.price_button:active{
+    background-color: red;
+    color: white;
+}

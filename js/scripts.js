@@ -14,6 +14,108 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerButton = document.querySelector(".header__button");
     headerButton.addEventListener('click', () => {
         console.log('Нажали кнопку');
- });
+    });
+
+
+const trainersImg = document.querySelectorAll('.trainers__image');
+trainersImg.forEach((item, index) => {
+    const trainersText = document.querySelectorAll('.trainers__desp');
+    item.addEventListener('mouseenter', () => {
+        item.style.opacity = 0.5;
+        trainersText[index].removeAttribute('hidden');
+    });
+        item.addEventListener('mouseleave', () => {
+            item.style.opacity = 1;
+            trainersText[index].setAttribute('hidden', true);
+        });
+    });
 
 });
+const trenersContainer = document.querySelector(".trainers");
+if (trenersContainer) {
+    const dataTitleTrainers= [
+            "Ирина Лайм",
+            "Марина Орлова",
+            "Лиза Весенняя",
+        ];
+        const titleTreners =trenersContainer.querySelectorAll(".trainers__name");
+      titleTreners.forEach((item, index) => {
+      item.textContent = dataTitleTrainers[index];
+           });
+}
+/* Модальное окно*/
+
+
+const welcоmeButtonModal = document.querySelector(".training__button");
+let modalApplication = document.querySelector(".popup");
+welcоmeButtonModal.addEventListener("click", () => {
+    modalApplication.removeAttribute("hidden");
+    //
+    let modal = document.querySelector(".applications");
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.background = "rgba(58, 60, 65, 0.7)";
+    console.log(modal);
+    //
+});
+document.querySelector(".form__close").addEventListener("click", (event) => {
+        modalApplication.setAttribute("hidden", true);
+        let close = document.querySelector(".applications");
+        close.style.width = "";
+        close.style.height = "";
+        close.style.background = "";
+});
+console.log(welcоmeButtonModal)
+console.log(modalApplication);
+
+/*
+if (welcоmeButtonModal && modalApplication) {
+    welcоmeButtonModal.addEventListener("click", () => {
+      modalApplication.removeAttribute("hidden");
+    });
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target === modalApplication) {
+        modalApplication.setAttribute("hidden", true);
+    }
+});
+*/
+
+const cardsPrice=document.querySelector('.price');
+if (cardsPrice){
+    const priceList=cardsPrice.querySelector('.price_list');
+    const cardsPriceData={
+        price1: {
+            level:'СТАНДАРТ',
+            price:'10000',
+            button:'КУПИТЬ'
+        },
+        price2:{
+            level:'БИЗНЕС',
+            price:'12000',
+            button:'КУПИТЬ'
+        },
+        price3:{
+            level:'ИНДИВИДУАЛЬНЫЙ',
+            price:'15000',
+            button:'КУПИТЬ'
+        }
+    }
+    const createCard=(level, price, button)=>{
+        const card=`
+        <li class="price_item">
+            <p class="price_level">${level}</p>
+            <p class="price_price">${price}</p>
+            <button class="price_button button">${button}</p>    
+        </li>
+    `;
+    return card;    
+    }
+
+    for (const cardKey in cardsPriceData){
+        const card=cardsPriceData[cardKey];
+        const cardElement=createCard(card.level, card.price, card.button);
+        priceList.insertAdjacentHTML('beforeend', cardElement);
+    }
+}    
