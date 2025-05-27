@@ -43,8 +43,32 @@ if (trenersContainer) {
       item.textContent = dataTitleTrainers[index];
            });
 }
+/* Модальное окно*/
 
-const welcоmeButtonModal = document.querySelector(".header__button");
+
+const welcоmeButtonModal = document.querySelector(".training__button");
+let modalApplication = document.querySelector(".popup");
+welcоmeButtonModal.addEventListener("click", () => {
+    modalApplication.removeAttribute("hidden");
+    //
+    let modal = document.querySelector(".applications");
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.background = "rgba(58, 60, 65, 0.7)";
+    console.log(modal);
+    //
+});
+document.querySelector(".form__close").addEventListener("click", (event) => {
+        modalApplication.setAttribute("hidden", true);
+        let close = document.querySelector(".applications");
+        close.style.width = "";
+        close.style.height = "";
+        close.style.background = "";
+});
+console.log(welcоmeButtonModal)
+console.log(modalApplication);
+
+/*
 if (welcоmeButtonModal && modalApplication) {
     welcоmeButtonModal.addEventListener("click", () => {
       modalApplication.removeAttribute("hidden");
@@ -56,3 +80,4 @@ window.addEventListener("click", (event) => {
         modalApplication.setAttribute("hidden", true);
     }
 });
+*/
