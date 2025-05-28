@@ -119,3 +119,52 @@ if (cardsPrice){
         priceList.insertAdjacentHTML('beforeend', cardElement);
     }
 }    
+
+//3.6
+const cardsCon = document.querySelector(".inventar");
+if (cardsCon){
+    const cardList = cardsCon.querySelector(".inventar__wrapper");
+
+// Пример URL для получения данных с сервера
+const apiUrl = "data.json";
+
+// Функция для создания карточки
+const createCard = (
+    titel,
+    image,
+    iconAlt,
+    iconWidth,
+    iconHeight
+) =>{
+    // Шаблонные строки и подстановки
+    const card = `
+    <div class="inventar__wrap">
+    <p class= "inventar__vid">${titel}</p>
+    <img class="job__img" src="${image}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+    `;
+
+    return card;
+}
+    fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data); // Данные
+        console.log(typeof data); // Тип полученных данных
+
+        data.forEach((item) => {
+            const cardElement = createCard(
+                item.titel,
+                item.image,
+                item.iconAlt,
+                item.iconWidth,
+                item.iconHeight
+            );
+            cardList.insertAdjacentHTML("beforeend", cardElement);
+        });
+    })
+    .catch((error) => {
+        console.error("Ошибка при загрузке данных:", error);
+    });
+
+
+}
