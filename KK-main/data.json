@@ -1,0 +1,44 @@
+[
+    {
+        "titel": "Резинки для фитнеса",
+        "image": "images/rezinki.jpg",
+        "iconAtl": "Инвентарь 1",
+        "iconWidth": 387,
+        "iconHeight": 236
+    },
+    {
+        "titel": "Ролл для фитнеса",
+        "image": "images/rolly.jpg",
+        "iconAtl": "Инвентарь 2",
+        "iconWidth": 387,
+        "iconHeight": 236
+    },
+    {
+        "titel": "Коврики для фитнеса",
+        "image": "images/covrici.jpg",
+        "iconAtl": "Инвентарь 3",
+        "iconWidth": 387,
+        "iconHeight": 236
+    },
+    {
+        "titel": "Гантели для фитнеса",
+        "image": "images/gantel.jpg",
+        "iconAtl": "Инвентарь 4",
+        "iconWidth": 387,
+        "iconHeight": 236
+    },
+    {
+        "titel": "Фитболы",
+        "image": "images/fitbol.jpg",
+        "iconAtl": "Инвентарь 5",
+        "iconWidth": 387,
+        "iconHeight": 236
+    },
+    {
+        "titel": "Блоки для растяжки",
+        "image": "images/bloki.jpg",
+        "iconAtl": "Инвентарь 6",
+        "iconWidth": 387,
+        "iconHeight": 236
+    }
+]
