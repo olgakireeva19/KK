@@ -197,5 +197,7 @@ box-shadow: 0 8px 16px 0;
     padding: 0; /*ставим в 0 пикселей внутренние отступы*/
 
 }
-
+.swiper__image{
+    margin: 0 auto;
+}
 

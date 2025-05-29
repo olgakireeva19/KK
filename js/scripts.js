@@ -166,5 +166,15 @@ const createCard = (
         console.error("Ошибка при загрузке данных:", error);
     });
 
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+const swiper = new Swiper(".swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    }
 
 }

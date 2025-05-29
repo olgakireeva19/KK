@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cтудия растяжки</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -81,9 +82,9 @@
             </div>
         </section>
         <section class="section price">
-        <h2 class="price_title section_title">Выберите нужный пакет</h2>
-        <ul class="price_list">
-           <!-- <li class="price_item">
+            <h2 class="price_title section_title">Выберите нужный пакет</h2>
+            <ul class="price_list">
+                <!-- <li class="price_item">
                 <p class="price_level">СТАНДАРТ</p>
                 <P class="price_price">10000</P>
                 <button class="price_button button">КУПИТЬ</button>
@@ -97,13 +98,13 @@
                 <p class="price_level">ИНДИВИДУАЛЬНЫЙ</p>
                 <p class="price_price">15000</p>
                 <button class="price_button button">КУПИТЬ</button>
-            </li>-->             
-         </ul>
+            </li>-->
+            </ul>
         </section>
         <section class="inventar">
             <h2 class="inventar__title">Инвентарь</h2>
-           <div class="inventar__wrapper">
-           <!-- <div class="inventar__wrap">
+            <div class="inventar__wrapper">
+                <!-- <div class="inventar__wrap">
                 <p class="inventar__vid">Резинки для фитнеса</p>
                 <img class="inventar__image" src="images/rezinki.jpg" alt="" width="300">
            </div>
@@ -128,8 +129,35 @@
            <img class="inventar__image" src="images/bloki.jpg" alt="" width="300">
             </div>-->
             </div>
-           
-            </section>
+        </section>
+        <section>
+            <h2> Залы</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/zal 1.jpg" width="500" height="400" class="swiper__image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/zal 2.jpg" width="500" height="400" class="swiper__image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/zal 3.jpg" width="500" height="400" class="swiper__image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/zal 4.jpg" width="500" height="400" class="swiper__image">
+                    </div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+
     </main>
     <footer class="footer container">
         <section class="contacts">
@@ -139,11 +167,11 @@
         </section>
         <p>Котолуп Татьяна, Киреева Ольга ФО-41</p>
     </footer>
-    <div class = "applications"> 
+    <div class="applications">
         <section class="popup" hidden>
             <form class="form">
                 <h1 class="form__title">Онлайн-запись</h1>
-                <input class="form__input" type="text" name="firt_name" placeholder="Имя"></p>  
+                <input class="form__input" type="text" name="firt_name" placeholder="Имя"></p>
                 <input class="form__input" type="text" name="last_name" placeholder="Фамилия">
                 <input class="form__input" type="tel" name="phone" placeholder="Телефон">
                 <input class="form__input" type="email" name="email" placeholder="Email">
@@ -152,6 +180,7 @@
             <button class="form__close" type="button">close</button>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
