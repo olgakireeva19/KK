@@ -187,7 +187,7 @@ box-shadow: 0 8px 16px 0;
     color: white;
 }
 
-.inventar_wrapper{
+.inventar__wrapper{
    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
     flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
     gap: 50px; /* промежуток между карточками */
