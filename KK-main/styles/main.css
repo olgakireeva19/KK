@@ -1,0 +1,203 @@
+.training{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.training__button{
+    margin-top: 15px;
+    margin-bottom:15px;
+    color: rgb(0, 0, 0);
+    background-color: cadetblue;
+}
+.trainers__wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.trainers__card{
+    padding-top: 30px;
+    width: 450px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #ca2d2d;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.trainers__image{
+    margin: 0 auto;
+}
+
+.form{
+    width: 800px;
+    background-color: rgb(200, 218, 241);
+    flex-direction:column ;
+    align-items: center;
+    width: 500px;
+}
+.form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.menu__link:hover{
+background-color: aliceblue;
+box-shadow: 0 8px 16px 0;
+}
+.menu__link:active{
+    background-color: rgb(8, 47, 54);
+    color: rgb(225, 240, 240);
+}
+
+.training__button:hover{
+    background-color: aliceblue;
+    box-shadow: 0 8px 16px 0;
+}
+.training__button:active{
+    background-color: rgb(8, 47, 54);
+    color: rgb(225, 240, 240);
+}
+
+.header__button:hover{
+    background-color: aliceblue;
+    box-shadow: 0 8px 16px 0;
+}
+.header__button:active{
+    background-color: rgb(8, 47, 54);
+    color: rgb(225, 240, 240);
+}
+.reviews__desp{
+    border: 2px solid #ca2d2d;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.trainers__description {
+    margin-top: 15px; 
+    color: #4a4a4a; 
+    text-align: center;
+    font-size: 16px; 
+    position: absolute; 
+    width: 250px; 
+    background-color: #f79d9d; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 50%);
+}
+.applications {
+    position: fixed; /* позицинорование фиксированное */
+    top: 0; /* Элемент будет находиться на верхней границе экрана*/
+    left: 0; /* Элемент будет находиться на левой границе экрана.*/
+}
+.application {
+    position: absolute; /* позиционируется абсолютно*/
+    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%;/*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, -50%);/* смещаем элемент относительно его текущего положения*/
+    max-width: 800px;/* Максимальная ширина окна */
+    width: 100%;/* Ширина 100% от родительского элемента */
+    padding: 50px 20px; /* Внутренние отступы: 50px сверху и снизу, 20px слева и справа */
+    display: flex; /*Используем flexbox для выравнивания*/
+    justify-content: center; /* распределяем элементы по центру*/ 
+    align-items: center; /* выравнивание по вертикали */
+    column-gap: 64px; /* отступы между столбцами */
+    background-color: #d52027; /*фон модального окна*/
+    color: #fff; /*цвет текста*/
+}
+.application__title {
+    font-size: 36px; /*размер шрифта для заголовков*/
+}
+.application__text {
+    margin-top: 20px; /* Отступ сверху */
+    font-size: 20px; /*размер шрифта для текста*/
+}
+.application__form {
+    width: 500px; /*устанавливаем ширину для формы*/
+    display: flex; /*Используем flexbox для выравнивания формы в строку*/
+    flex-direction: column;
+    row-gap: 10px; /* отступы между строками */
+} 
+
+.applications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    padding: 16px;
+    width: 600px;
+    border-radius: 14px;
+ }
+.form__close{
+    position: absolute;
+    top: 10px;
+    right: 11px;
+}
+.popup{
+    position: relative;
+}
+
+.price_list{
+    margin-top: 60px;
+    display: flex;
+    column-gap: 40px;
+}
+.price_item{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ca2d2d;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    transition: transform 0.3s ease-out;
+}
+.price_level{
+    font-weight: 600;
+    font-size: 30px;
+}
+.price_price{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.price_button{
+    margin-top: 15px;
+    margin-bottom:15px;
+    color: white;
+    background-color: red;
+    width: 250px;
+    height: 60px;
+    border-radius: 60px; 
+}
+
+.price_button:hover{
+    background-color: orange;
+    
+}
+.price_button:active{
+    background-color: red;
+    color: white;
+}
+
+.inventar__wrapper{
+   display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+    gap: 50px; /* промежуток между карточками */
+    justify-content: center; /* распределяем элементы по центру*/ 
+    list-style-type: none; /*убираем маркеры от списка ul*/
+    margin: 0; /*ставим в 0 пикселей внешние отступы*/
+    padding: 0; /*ставим в 0 пикселей внутренние отступы*/
+
+}
+.swiper__image{
+    margin: 0 auto;
+}
+
